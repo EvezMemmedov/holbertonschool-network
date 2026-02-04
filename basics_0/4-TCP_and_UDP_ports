@@ -1,12 +1,8 @@
-#!/usr/bin/env bash
-# File: 4-TCP_and_UDP_ports
-# Description: Display listening TCP/UDP ports and UNIX sockets with PID/Program name
+#!/usr/bin/env bash# 4-TCP_and_UDP_ports
 
 echo "Active Internet connections (only servers)"
-# TCP and UDP listening ports with PID/program
 netstat -tulnp 2>/dev/null | grep LISTEN
 
 echo
 echo "Active UNIX domain sockets (only servers)"
-# UNIX domain sockets in LISTEN state with PID/program
-netstat -xlnp 2>/dev/null
+netstat -xlnp 2>/dev/null | grep LISTEN
