@@ -1,11 +1,4 @@
-#!/usr/bin/env bash
-# This script displays all listening TCP, UDP, and UNIX sockets with their PID and program name
+#!/bin/bash
+# Bu skript bütün dinlənilən TCP, UDP və UNIX soketləri proqram adları ilə göstərir.
 
-# Active Internet connections (TCP + UDP)
-echo "Active Internet connections (only servers)"
-netstat -tulnp 2>/dev/null | grep LISTEN || true
-
-echo
-# Active UNIX domain sockets
-echo "Active UNIX domain sockets (only servers)"
-netstat -xlnp 2>/dev/null | grep LISTEN || true
+sudo netstat -lnp
