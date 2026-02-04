@@ -1,9 +1,8 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # 4-TCP_and_UDP_ports
 
 echo "Active Internet connections (only servers)"
-sudo ss -tulnp
+sudo netstat -tulpn | grep LISTEN
 
-echo
 echo "Active UNIX domain sockets (only servers)"
-sudo ss -xlnp
+sudo netstat -lxpn | grep LISTEN
