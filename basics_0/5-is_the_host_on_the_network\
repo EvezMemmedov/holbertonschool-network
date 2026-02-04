@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+^#!/usr/bin/env bash
 # We check whether the argument has been provided
 
 if [ "$#" -ne 1 ]; then
