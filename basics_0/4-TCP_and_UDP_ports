@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Bu skript bütün dinlənilən TCP, UDP və UNIX soketləri proqram adları ilə göstərir.
 
 sudo netstat -lnp
