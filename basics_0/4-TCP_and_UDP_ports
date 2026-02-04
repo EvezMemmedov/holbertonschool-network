@@ -1,4 +1,5 @@
-#!/usr/bin/env bash# 4-TCP_and_UDP_ports
+#!/usr/bin/env bash
+# 4-TCP_and_UDP_ports
 
 echo "Active Internet connections (only servers)"
 netstat -tulnp 2>/dev/null | grep LISTEN
