@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Bu skript bütün dinlənilən TCP, UDP və UNIX soketləri proqram adları ilə göstərir.
+# This script displays all listening TCP, UDP, and UNIX sockets with their PID and program name
 
 sudo netstat -lnp
