@@ -2,8 +2,9 @@
 # 4-TCP_and_UDP_ports
 
 echo "Active Internet connections (only servers)"
-netstat -tulnp 2>/dev/null | grep LISTEN
+netstat -tulnp 2>/dev/null | grep LISTEN || true
 
 echo
 echo "Active UNIX domain sockets (only servers)"
-netstat -xlnp 2>/dev/null | grep LISTEN
+netstat -xlnp 2>/dev/null | grep LISTEN || true
+
